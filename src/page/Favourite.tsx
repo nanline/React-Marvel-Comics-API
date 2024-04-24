@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Favourite() {
   const [favs, setFavs] = useState<MarvelItem[]>([]);
-  const [isFavs, setIsFavs] = useState<boolean>();
+  // const [isFavs, setIsFavs] = useState<boolean>();
 
   useEffect(() => {
     const favourites = localStorage.getItem(FAVOURITES);

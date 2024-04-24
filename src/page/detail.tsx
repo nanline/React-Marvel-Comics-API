@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { MarvelItem, MarvelResponse } from "./interface";
 import { API_KEY, HASH, MARVELS } from "@/URL/url";
 import axios from "axios";
