@@ -49,6 +49,7 @@ function DetailPage() {
         console.log(favList);
         // เช็คว่า comic อันนี้อยู่ใน Favorites หรือป่าว
         setFav(favList);
+        // มีข้อมูลที่
         setIsFav(favList.some((e) => e.id === comicRes.id));
       }
     } catch (error) {
