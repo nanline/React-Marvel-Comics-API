@@ -1,4 +1,3 @@
-import NavBar from "@/component/Item/navBar";
 import { FAVOURITES } from "@/constants";
 import { MarvelItem } from "@/page/interface";
 import { useEffect, useState } from "react";

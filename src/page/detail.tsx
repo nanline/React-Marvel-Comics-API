@@ -5,7 +5,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ReactLoading from "react-loading";
 import { FAVOURITES } from "@/constants";
-import NavBar from "@/component/Item/navBar";
 
 function DetailPage() {
   const { id } = useParams<{ title: string; id: string }>();

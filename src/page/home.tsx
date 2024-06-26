@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import NavBar from "../component/Item/navBar";
 import CardList from "@/component/card";
 import FooterPage from "@/component/Item/footer";
 import { useComicListStore } from "@/store/infoData";
