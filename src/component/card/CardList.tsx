@@ -9,7 +9,7 @@ function CardList(props: CardListProps) {
   const data = props.data;
 
   return (
-    <div className="flex flex-wrap mt-[130px] gap-10 drop-shadow-xl justify-center">
+    <div className="flex flex-wrap gap-5 drop-shadow-xl w-[85%] justify-center">
       {data.map((mItem) => (
         <div
           key={mItem.id}

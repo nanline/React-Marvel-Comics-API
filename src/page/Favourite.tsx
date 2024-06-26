@@ -1,3 +1,4 @@
+import NavBar from "@/component/Item/navBar";
 import { FAVOURITES } from "@/constants";
 import { MarvelItem } from "@/page/interface";
 import { useEffect, useState } from "react";
@@ -17,26 +18,12 @@ function Favourite() {
   }, []);
 
   return (
-    <div className="h-[100vh]">
-      <div>
-        <div className="bg-[#EC1D23] flex gap-5 pl-[10%] w-full max-h-[80px] rounded-lg">
-          <div className="flex justify-center items-center">
-            <img
-              className="max-h-[50px] my-[20px]"
-              src="https://theme.zdassets.com/theme_assets/2376335/f68b4cede823c3050cf95809224868d201a3d53a.jpg"
-              alt="logo MARVEL"
-            />
-          </div>
-          <button className="text-white">
-            <a href="/">Home</a>
-          </button>
-          <button className="text-white">
-            <a href="/favourite">Favourite</a>
-          </button>
-        </div>
-      </div>
-      <div className="bg-red-300 bg-opacity-70 my-5 py-5 px-5 rounded-lg">
-        <div className="flex justify-center flex-wrap gap-[20px] max-w-[1100px] my-5">
+    <div className="min-h-[980px] w-[90%] max-w-[1100px]">
+      {/* <div>
+        <NavBar />
+      </div> */}
+      <div className="py-28">
+        <div className="bg-red-300 bg-opacity-70 rounded-lg flex justify-center flex-wrap gap-[30px] max-w-[1100px] min-h-[300px] py-10">
           {favs.map((e) => (
             <div
               key={e.id}

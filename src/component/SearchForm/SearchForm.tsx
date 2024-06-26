@@ -74,8 +74,8 @@ function SearchForm() {
   };
 
   return (
-    <div className="w-full">
-      <div className="my-2 ml-5">
+    <div>
+      <div className="">
         <label
           htmlFor="default-search"
           className="mb-2 text-sm font-medium text-red-900 sr-only dark:text-white"
@@ -106,7 +106,7 @@ function SearchForm() {
               onChange={(e) => setInput(e.target.value)}
               type="search"
               id="default-search"
-              className="flex capitalize mt-5 w-full p-4 ps-10 text-sm text-red-800 border border-gray-300 rounded-lg bg-gray-50 focus:ring-red-500 focus:border-red-500 dark:bg-red-700 dark:border-red-500 dark:placeholder-red-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
+              className="flex capitalize w-full p-4 ps-10 text-sm text-red-800 border border-gray-300 rounded-lg bg-gray-50 focus:ring-red-500 focus:border-red-500 dark:bg-red-700 dark:border-red-500 dark:placeholder-red-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
               placeholder="Search comics"
             />
             <button

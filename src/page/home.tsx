@@ -14,13 +14,16 @@ const HomePage = () => {
   return (
     <div className="max-w-[1100px]">
       <div className="flex justify-center">
-        <NavBar />
-        {fetchComic.loading && (
-          <div className="h-[890px] flex justify-center items-center">
-            <ReactLoading type="bars" color="#690000" />
+        <div>
+          {fetchComic.loading && (
+            <div className="min-h-[980px] flex justify-center items-center">
+              <ReactLoading type="bars" color="#690000" />
+            </div>
+          )}
+          <div className="flex justify-center pt-28">
+            {!fetchComic.loading && <CardList data={comic.data} />}
           </div>
-        )}
-        {!fetchComic.loading && <CardList data={comic.data} />}
+        </div>
       </div>
       <div className="flex justify-center">
         <FooterPage />

@@ -5,6 +5,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ReactLoading from "react-loading";
 import { FAVOURITES } from "@/constants";
+import NavBar from "@/component/Item/navBar";
 
 function DetailPage() {
   const { id } = useParams<{ title: string; id: string }>();
@@ -64,7 +65,7 @@ function DetailPage() {
 
   if (isLoading) {
     return (
-      <div className="h-[890px] flex justify-center items-center">
+      <div className="h-[980px] flex justify-center items-center">
         <ReactLoading type="bars" color="#690000" />
       </div>
     );
@@ -89,23 +90,9 @@ function DetailPage() {
   };
 
   return (
-    <div className="max-w-[1100px] w-full h-[100vh]">
-      <div className="bg-[#EC1D23] flex gap-5 pl-[10%] rounded-lg">
-        <div className="flex justify-center items-center">
-          <img
-            className="max-h-[50px] my-[20px]"
-            src="https://theme.zdassets.com/theme_assets/2376335/f68b4cede823c3050cf95809224868d201a3d53a.jpg"
-            alt="logo MARVEL"
-          />
-        </div>
-        <button className="text-white">
-          <a href="/">Home</a>
-        </button>
-        <button className="text-white">
-          <a href="/favourite">Favourite</a>
-        </button>
-      </div>
-      <div className="flex flex-wrap justify-center mt-[20px] m-auto h-[80%] bg-red-200 bg-opacity-80 py-[50px] px-[50px] rounded-lg">
+    <div className="max-w-[1100px] w-[90%] h-[980px]">
+      {/* <NavBar /> */}
+      <div className="flex justify-center h-[60%] bg-red-200 bg-opacity-80 rounded-lg mt-28">
         <div>
           <div className=" flex justify-center py-10">
             <img

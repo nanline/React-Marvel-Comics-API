@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from "./page/home";
 import DetailPage from "./page/detail";
 import Favourite from "./page/Favourite";
+import NavBar from "./component/Item/navBar";
 
 function App() {
   const router = createBrowserRouter(
@@ -24,8 +25,11 @@ function App() {
   );
 
   return (
-    <div className="bg-[url('/images/waldemar-eIOPDU3Fkwk-unsplash1.jpg')] max-h-[100%] max-w-[100%]">
+    <div className="bg-[url('/images/dev-d2Py_uhXJQo-unsplash.jpg')] bg-cover bg-cente w-screen min-h-[980px]">
       <div className="flex justify-center">
+        <NavBar />
+      </div>
+      <div className="flex justify-center ">
         <RouterProvider router={router} />
       </div>
     </div>
