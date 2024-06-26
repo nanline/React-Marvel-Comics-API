@@ -18,9 +18,6 @@ function Favourite() {
 
   return (
     <div className="min-h-[980px] w-[90%] max-w-[1100px]">
-      {/* <div>
-        <NavBar />
-      </div> */}
       <div className="py-28">
         <div className="bg-red-300 bg-opacity-70 rounded-lg flex justify-center flex-wrap gap-[30px] max-w-[1100px] min-h-[300px] py-10">
           {favs.map((e) => (

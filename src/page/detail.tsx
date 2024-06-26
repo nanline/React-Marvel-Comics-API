@@ -90,7 +90,6 @@ function DetailPage() {
 
   return (
     <div className="max-w-[1100px] w-[90%] h-[980px]">
-      {/* <NavBar /> */}
       <div className="flex justify-center h-[60%] bg-red-200 bg-opacity-80 rounded-lg mt-28">
         <div>
           <div className=" flex justify-center py-10">
