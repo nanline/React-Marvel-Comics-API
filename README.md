@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 # Demo
 
-- [View demo]([https://astounding-malabi-8012d0.netlify.app/](https://nanline.github.io/React-Marvel-Comics-API/))
+- [View demo](https://nanline.github.io/React-Marvel-Comics-API/)
 
 ## Expanding the ESLint configuration
 
