@@ -16,7 +16,7 @@ function NavBar() {
         </div>
         <div className="text-white">
           <button>
-            <a href="/favourite">Favourite</a>
+            <a href="favourite">Favourite</a>
           </button>
         </div>
         <div className="w-full hidden sm:block space-x-1">
