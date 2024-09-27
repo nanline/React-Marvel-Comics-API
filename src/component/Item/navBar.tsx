@@ -1,4 +1,5 @@
 import SearchForm from "@/component/SearchForm";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -11,12 +12,12 @@ function NavBar() {
         />
         <div className="text-white">
           <button>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </button>
         </div>
         <div className="text-white">
           <button>
-            <a href="favourite">Favourite</a>
+            <Link to="/favourite">Favourite</Link>
           </button>
         </div>
         <div className="w-full hidden sm:block space-x-1">
